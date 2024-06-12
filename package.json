@@ -11,12 +11,15 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@novu/echo": "^0.24.3-alpha.2",
+    "@react-email/components": "^0.0.19",
     "@remix-run/node": "^2.9.2",
     "@remix-run/react": "^2.9.2",
     "@remix-run/serve": "^2.9.2",
     "isbot": "^4.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-email": "^2.1.4"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.9.2",
