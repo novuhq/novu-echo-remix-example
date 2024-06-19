@@ -11,7 +11,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@novu/echo": "^0.24.3-alpha.2",
+    "@novu/framework": "^0.24.3-alpha.6",
     "@react-email/components": "^0.0.19",
     "@remix-run/node": "^2.9.2",
     "@remix-run/react": "^2.9.2",

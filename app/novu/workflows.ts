@@ -1,17 +1,15 @@
-import { Echo } from '@novu/echo';
+import { Client, workflow } from '@novu/framework';
 import { renderEmail } from '~/emails/vercel-invite-user';
 
-export const echo = new Echo({
-
-  apiKey: process.env.NOVU_API_KEY,
+export const client = new Client({
   /**
    * Enable this flag only during local development
    * For production this should be false
    */
-  devModeBypassAuthentication: true
+  strictAuthentication: false
 });
 
-const newSignup = echo.workflow('new-signup', async ({ step, payload }) => {
+export const signupWorkflow = workflow('new-signup', async ({ step, payload }) => {
   // Send a welcome email
   await step.email('send-email', async (inputs) => {
     return {
